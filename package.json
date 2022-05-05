@@ -26,13 +26,13 @@
     "jsprim": "1.4.2"
   },
   "scripts": {
-    "bootstrap": "yarn workspaces foreach run bootstrap",
-    "build": "yarn workspaces foreach run build",
-    "dev": "yarn workspaces foreach run --stream --parallel dev",
+    "bootstrap": "yarn workspaces foreach --verbose run bootstrap",
+    "build": "yarn workspaces foreach --verbose run build",
+    "dev": "yarn workspaces foreach --verbose run --stream --parallel dev",
     "test": "yarn workspaces foreach --verbose run test",
-    "test-build": "yarn workspaces foreach run test-build",
-    "test-staged": "yarn workspaces foreach run test-staged -- --",
-    "test-missing-apis": "yarn workspaces foreach run test-missing-apis",
+    "test-build": "yarn workspaces foreach --verbose run test-build",
+    "test-staged": "yarn workspaces foreach --verbose run test-staged -- --",
+    "test-missing-apis": "yarn workspaces foreach --verbose run test-missing-apis",
     "test-lint": "yarn lint",
     "lint": "yarn eslint packages/*/src/**/*.ts packages/*/src/*.ts"
   },
