@@ -5456,14 +5456,14 @@ __metadata:
 
 "neovim@file:../neovim::locator=%40neovim%2Fintegration-tests%40workspace%3Apackages%2Fintegration-tests":
   version: 4.10.1
-  resolution: "neovim@file:../neovim#../neovim::hash=d54f29&locator=%40neovim%2Fintegration-tests%40workspace%3Apackages%2Fintegration-tests"
+  resolution: "neovim@file:../neovim#../neovim::hash=69beb3&locator=%40neovim%2Fintegration-tests%40workspace%3Apackages%2Fintegration-tests"
   dependencies:
     "@msgpack/msgpack": ^2.7.1
     semver: ^7.3.5
     winston: 3.3.3
   bin:
     neovim-node-host: ./bin/cli.js
-  checksum: 9457e7f86a6f906cde6a47a8a2265f87acfc8ea555a99882f82a4510b29ff52b975479fb20691cc46ee775d7fabd41d9d235286c60763de39d3da711e9d4053a
+  checksum: 9ca41ec6ac38398133fe13e540da403bfbe47813a586bdfa581c0b5105207eebabd65062929d1096dcaf32be646cab11b657c6903d0e83c994c91d93610f1a10
   languageName: node
   linkType: hard
 
