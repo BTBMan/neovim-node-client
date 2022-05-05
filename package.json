@@ -9,7 +9,6 @@
   ],
   "homepage": "https://github.com/neovim/node-client",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.31.1",
     "@typescript-eslint/parser": "^4.31.1",
@@ -19,7 +18,6 @@
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.4",
-    "lerna": "^4.0.0",
     "lint-staged": "^11.1.2",
     "prettier": "^2.4.1",
     "typescript": "^4.4.3"
@@ -28,13 +26,13 @@
     "jsprim": "1.4.2"
   },
   "scripts": {
-    "bootstrap": "yarn lerna bootstrap",
-    "build": "yarn lerna run build",
-    "dev": "yarn lerna run --stream --parallel dev",
-    "test": "yarn lerna run test",
-    "test-build": "yarn lerna run test-build",
-    "test-staged": "yarn lerna run test-staged -- --",
-    "test-missing-apis": "yarn lerna run test-missing-apis",
+    "bootstrap": "yarn workspaces foreach run bootstrap",
+    "build": "yarn workspaces foreach run build",
+    "dev": "yarn workspaces foreach run --stream --parallel dev",
+    "test": "yarn workspaces foreach --verbose run test",
+    "test-build": "yarn workspaces foreach run test-build",
+    "test-staged": "yarn workspaces foreach run test-staged -- --",
+    "test-missing-apis": "yarn workspaces foreach run test-missing-apis",
     "test-lint": "yarn lint",
     "lint": "yarn eslint packages/*/src/**/*.ts packages/*/src/*.ts"
   },
@@ -51,6 +49,7 @@
   },
   "volta": {
     "node": "16.13.1",
-    "yarn": "1.22.15"
-  }
+    "yarn": "3.2.0"
+  },
+  "packageManager": "yarn@3.2.0"
 }
